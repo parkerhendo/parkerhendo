@@ -1,0 +1,286 @@
+/* MARK: - variables */
+:root {
+  /* spacers */
+  --spacing-sm: 0.25rem; /* 4px */
+  --spacing-md: 0.5rem; /* 8px */
+  --spacing-base: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2.5rem; /* 40px */
+  --spacing-xxl: 4rem; /* 64px */
+  /* font size */
+  --title-lg-size: 1.25rem;
+  --title-md-size: 1rem;
+  --title-sm-size: 0.875rem;
+  --body-lg-size: 1rem;
+  --body-sm-size: 0.875rem;
+  /* font weight */
+  --title-lg-weight: 600;
+  --title-md-weight: 600;
+  --title-sm-weight: 500;
+  --body-lg-weight: 400;
+  --body-sm-weight: 400;
+  /* line height */
+  --title-lg-lh: 1.625;
+  --title-md-lh: 1.25;
+  --title-sm-lh: 1.125;
+  --body-lg-lh: 1.7;
+  --body-sm-lh: 1.125;
+  /* Color */
+  --black: rgb(38, 39, 44);
+  --gray: rgb(109, 112, 126);
+  --blue: rgb(10, 110, 219);
+  ;
+}
+
+/* MARK: - General layout styles */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 1440px;
+  padding: 0 5vw;
+  margin: 0 auto;
+}
+
+/* MARK: - General typographic styles */
+
+.title-lg {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--title-lg-size);
+  font-weight: var(--title-lg-weight);
+  line-height: var(--title-lg-lh);
+  color: var(--black);
+}
+
+.title-md {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--title-md-size);
+  font-weight: var(--title-md-weight);
+  line-height: var(--title-md-lh);
+  
+  color: var(--black);
+}
+
+.title-sm {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--title-sm-size);
+  font-weight: var(--title-sm-weight);
+  line-height: var(--title-sm-lh);
+  
+  color: var(--gray);
+}
+
+.body-lg {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--body-lg-size);
+  font-weight: var(--body-lg-weight);
+  line-height: var(--body-lg-lh);
+  color: var(--black);
+}
+
+.body-sm {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--body-sm-size);
+  font-weight: var(--body-sm-weight);
+  line-height: var(--body-sm-lh);
+  color: var(--black);
+}
+
+/* MARK: - Component styles */
+.paragraph {
+  color: var(--black);
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.link {
+  color: var(--blue);
+  transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.link.internal {
+  text-decoration: none;
+}
+
+.link.external {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.block {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.button {
+  font-weight: 500;
+  padding: var(--spacing-md) var(--spacing-base);
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.block .block-title {
+  margin-bottom: var(--spacing-lg);
+}
+
+.work-item:not(:last-of-type) {
+  margin-bottom: var(--spacing-xl);
+}
+
+.work-item .work-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-base);
+}
+
+.work-header .work-date {
+  color: var(--gray);
+}
+
+.work-button {
+  margin-top: var(--spacing-lg);
+  color: var(--gray);
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 2px 0 rgba(38, 39, 44, 0.16);
+}
+
+.work-button:hover {
+  background-color: hsl(38, 12%, 98%);
+  box-shadow: 0 3px 6px 0 rgba(38, 39, 44, 0.16);
+}
+
+/* MARK: - Header styles */
+.header {
+  width: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+}
+
+.title-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.title-group .title {
+  color: var(--black);
+}
+
+.title-group .subtitle {
+  color: var(--gray);
+}
+
+.site-nav .link:not(:last-of-type) {
+  margin-right: 2.5rem;
+}
+
+/* MARK: - Content area styles */
+.content {
+  margin-top: var(--spacing-xl);
+  width: 100%;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: var(--spacing-base);
+}
+
+.content aside {
+  grid-column: 0 / span 2;
+  grid-row: 1;
+}
+
+.content main {
+  grid-column: 4 / span 6;
+  grid-row: 1;
+}
+
+.content aside ul li:not(:last-of-type) {
+  margin-bottom: var(--spacing-base);
+}
+
+.skills-values {
+  width: 100%;
+}
+
+.skills-values-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+}
+
+.col {
+  width: 50%
+}
+
+/* MARK: - Mobile styles */
+@media screen and (max-width: 768px) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .title-group > * {
+    text-align: left;
+  }
+
+  .content aside {
+    grid-column: span 12;
+    grid-row: 2;
+  }
+  
+  .content main {
+    grid-column: span 12;
+    grid-row: 1;
+  }
+
+  .content aside ul li {
+    display: inline;
+  }
+
+  .content aside ul li:not(:last-of-type) {
+    margin-bottom: 0;
+    margin-right: var(--spacing-xl);
+  }
+
+  .content-wrapper {
+    grid-template-columns: 0;
+    grid-template-rows: 1fr 128px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content aside ul li:not(:last-of-type) {
+    margin-bottom: 0;
+    margin-right: var(--spacing-base);
+  }
+
+  .skills-values-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .skills-values-wrapper .col {
+    width: 100%;
+  }
+}
