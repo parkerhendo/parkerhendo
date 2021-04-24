@@ -1,8 +1,11 @@
-export default function PostHeader({title, author, date}) {
+export default function PostHeader({ title, date }) {
   return (
-    <div className='block'>
-      <h1 className="title-lg">{title}</h1>
-      <h3 className="title-sm author">{author.name} · {date}</h3>
+    <div className='post-header'>
+      <div className='post-header-group'>
+        <h1 className='title-lg'>{title}</h1>
+        <h3 className='title-sm date'>{date}</h3>
+      </div>
+      <hr className='post-header-line' />
     </div>
-  )
+  );
 }

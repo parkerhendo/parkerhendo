@@ -8,23 +8,18 @@ export default function Layout({ children }) {
         <aside>
           <ul>
             <li>
-              <a href='#' className='body-lg link'>
+              <a href='https://twitter.com/parkerhendo' target="_blank" className='body-lg link'>
                 Twitter
               </a>
             </li>
             <li>
-              <a href='#' className='body-lg link'>
-                Linkedin
-              </a>
-            </li>
-            <li>
-              <a href='#' className='body-lg link'>
+              <a href='https://github.com/parkerhendo' target="_blank" className='body-lg link'>
                 Github
               </a>
             </li>
             <li>
-              <a href='#' className='body-lg link'>
-                Dribble
+              <a href='https://linkedin.com/in/parkerhendo' target="_blank" className='body-lg link'>
+                Linkedin
               </a>
             </li>
           </ul>

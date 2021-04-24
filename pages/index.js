@@ -18,23 +18,23 @@ export default function Home() {
         <Block title='About me'>
           <p className='body-lg paragraph'>
             Hi, I'm Parker, I'm a coffee-obsessed product designer,{' '}
-            <a href='https://github.com/parkerhendo' target='_blank' className='link highlight'>
+            <a href='https://github.com/parkerhendo' target='_blank' className='link inline highlight'>
               tinkerer
             </a>
             ,{' '}
             <a
               href='https://www.goodreads.com/user/show/55640023-parker-henderson'
               target='_blank'
-              className='link highlight'
+              className='link inline highlight'
             >
               avid reader
             </a>
             , and{' '}
-            <a href='https://twitter.com/parkerhendo' target='_blank' className='link highlight'>
+            <a href='https://twitter.com/parkerhendo' target='_blank' className='link inline highlight'>
               tweeter
             </a>
             . I'm currently building design systems and{' '}
-            <a href='https://jumpstart.me' className='link highlight' target='_blank'>
+            <a href='https://jumpstart.me' className='link inline highlight' target='_blank'>
               recruiting software at Jumpstart.
             </a>
           </p>
@@ -96,7 +96,7 @@ export default function Home() {
         <Block title='Work experience'>
           <BlockItem
             title={'Jumpstart'}
-            category={'Current'}
+            category={'2020 - Current'}
             description={
               'Jumpstart is a shared talent marketplace that uses diversity data to help recruiters make more informed hiring decisions and give candidates equal opportunity to jobs within their preferred industry. I focus on integrations for our recruiter product and our design system.'
             }
@@ -105,7 +105,7 @@ export default function Home() {
 
           <BlockItem
             title={'Red Bull Media House'}
-            category={'2019-2020'}
+            category={'2019 - 2020'}
             description={
               'Red Bull TV brings an inside look into the World of Red Bull straight to your living room and mobile device. Working on a team of three product designers, I currently lead design efforts on Red Bull’s mobile and immersive products across iOS, Android, Oculus, and more.'
             }
@@ -114,7 +114,7 @@ export default function Home() {
 
           <BlockItem
             title={'Talk to You Live'}
-            category={'2018-2019'}
+            category={'2018 - 2019'}
             description={
               'TTYL is a voice-first communication app that looked to bring spontaneous and lightweight conversations to your life through technology. I lead design and product through our first public launch.'
             }
@@ -123,7 +123,7 @@ export default function Home() {
 
           <BlockItem
             title={'Various places'}
-            category={'2016-2019'}
+            category={'2016 - 2019'}
             description={
               'While finishing school, I spent a few years working with various early stage companies like ZebraIQ and PlayVS in a variety of design and engineering roles.'
             }

@@ -20,16 +20,18 @@ export default function BlockItem({ title, category, description, href, link }) 
       </div>
       <p className='body-lg paragraph'>{description}</p>
       {href && (
-        <a href={href} target='_blank' className='button work-button body-sm'>
-          View work
-        </a>
+        <div className='work-item-footer'>
+          <a href={href} target='_blank' className='button work-button body-sm'>
+            View work
+          </a>
+        </div>
       )}
       {link && (
-        <Link href={link.href}>
-          <a className='button work-button body-sm'>
-            {link.label}
-          </a>
-        </Link>
+        <div className='work-item-footer'>
+          <Link href={link.href}>
+            <a className='button work-button body-sm'>{link.label}</a>
+          </Link>
+        </div>
       )}
     </div>
   );
