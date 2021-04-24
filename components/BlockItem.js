@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 /**
  * Component Props
@@ -10,7 +11,7 @@ import React from 'react';
  *
  * @return  {Component}            returns a react component
  */
-export default function BlockItem({ title, category, description, link }) {
+export default function BlockItem({ title, category, description, href, link }) {
   return (
     <div className='work-item'>
       <div className='work-header'>
@@ -18,10 +19,17 @@ export default function BlockItem({ title, category, description, link }) {
         <h5 className='title-sm work-date'>{category}</h5>
       </div>
       <p className='body-lg paragraph'>{description}</p>
-      {link && (
-        <a href={link} target="_blank" className='button work-button body-sm'>
+      {href && (
+        <a href={href} target='_blank' className='button work-button body-sm'>
           View work
         </a>
+      )}
+      {link && (
+        <Link href={link.href}>
+          <a className='button work-button body-sm'>
+            {link.label}
+          </a>
+        </Link>
       )}
     </div>
   );

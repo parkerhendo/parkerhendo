@@ -100,7 +100,7 @@ export default function Home() {
             description={
               'Jumpstart is a shared talent marketplace that uses diversity data to help recruiters make more informed hiring decisions and give candidates equal opportunity to jobs within their preferred industry. I focus on integrations for our recruiter product and our design system.'
             }
-            link='https://jumpstart.me'
+            href='https://jumpstart.me'
           />
 
           <BlockItem
@@ -109,7 +109,7 @@ export default function Home() {
             description={
               'Red Bull TV brings an inside look into the World of Red Bull straight to your living room and mobile device. Working on a team of three product designers, I currently lead design efforts on Red Bull’s mobile and immersive products across iOS, Android, Oculus, and more.'
             }
-            link='https://redbull.com/tv'
+            href='https://redbull.com/tv'
           />
 
           <BlockItem
@@ -118,7 +118,7 @@ export default function Home() {
             description={
               'TTYL is a voice-first communication app that looked to bring spontaneous and lightweight conversations to your life through technology. I lead design and product through our first public launch.'
             }
-            link='https://ttyl.social'
+            href='https://ttyl.social'
           />
 
           <BlockItem

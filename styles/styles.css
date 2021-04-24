@@ -194,6 +194,7 @@
 
 .title-group .title {
   color: var(--black);
+  cursor: pointer;
 }
 
 .title-group .subtitle {
@@ -243,6 +244,10 @@
 
 .col {
   width: 50%
+}
+
+.author {
+  margin-top: var(--spacing-sm);
 }
 
 /* MARK: - Mobile styles */
