@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -9,15 +10,12 @@ export default function Header() {
           <h2 className='subtitle title-sm'>Designer. Engineer. Tinkerer. Thinker.</h2>
         </div>
         <nav className='site-nav'>
-          <a href='#' className='body-lg link internal'>
-            Home
-          </a>
-          <a href='#' className='body-lg link internal'>
-            About
-          </a>
-          <a href='#' className='body-lg link internal'>
-            Work
-          </a>
+          <Link href='/'>
+            <a className='body-lg link'>Home</a>
+          </Link>
+          <Link href='/now'>
+            <a className='body-lg link'>Now</a>
+          </Link>
         </nav>
       </div>
     </div>

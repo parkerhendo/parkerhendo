@@ -105,13 +105,25 @@
   transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.link:hover {
+.link.internal:hover {
   opacity: 0.7;
 }
 
 .link.internal {
   text-decoration: none;
 }
+
+/* .link.highlight {
+  text-decoration: none;
+  padding: 0.125rem;
+  color: var(--black);
+  background: rgba(10, 110, 219, 0.1);
+  border-radius: 2px;
+}
+
+.link.highlight:hover {
+  background: rgba(10, 110, 219, 0.16);
+} */
 
 .link.external {
   color: var(--blue);
@@ -152,7 +164,7 @@
 
 .work-button {
   margin-top: var(--spacing-lg);
-  color: var(--gray);
+  color: var(--black);
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 2px 0 rgba(38, 39, 44, 0.16);
 }
@@ -282,5 +294,10 @@
 
   .skills-values-wrapper .col {
     width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
   }
 }
