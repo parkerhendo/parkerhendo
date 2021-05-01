@@ -144,12 +144,27 @@
   margin-bottom: var(--spacing-xxl);
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 .button {
   font-weight: 500;
   padding: var(--spacing-md) var(--spacing-base);
   border-radius: 4px;
   display: inline-block;
   transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  cursor: pointer;
+}
+
+.ghost-button {
+  background: none;
+  color: rgb(var(--gray));
+}
+
+.ghost-button:hover {
+  background-color: rgba(var(--black), 0.04);
 }
 
 .block .block-title {

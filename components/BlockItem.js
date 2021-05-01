@@ -31,6 +31,14 @@ export default function BlockItem({ title, category, description, href, link }) 
           <Link href={link.href}>
             <a className='button work-button body-sm'>{link.label}</a>
           </Link>
+          <button
+            className='button ghost-button body-sm'
+            onClick={() => {
+              navigator.clipboard.writeText(`${window.location.href}${link.href}`);
+            }}
+          >
+            Share Link
+          </button>
         </div>
       )}
     </div>
