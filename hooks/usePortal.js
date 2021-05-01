@@ -7,10 +7,7 @@ function createRootElement(id) {
 }
 
 function addRootElemnet(rootElem) {
-  document.body.insertBefore(
-    rootElem, 
-    document.body.lastElementChild.nextElementSibling
-  );
+  document.body.insertBefore(rootElem, document.body.lastElementChild.nextElementSibling);
 }
 
 function usePortal(id) {
@@ -31,8 +28,8 @@ function usePortal(id) {
       if (!parentElem.childElementCount) {
         parentElem.remove();
       }
-    }
-  }, [id])
+    };
+  }, [id]);
 
   function getRootElem() {
     if (!rootElemRef.current) {
@@ -43,3 +40,5 @@ function usePortal(id) {
 
   return getRootElem();
 }
+
+export default usePortal;
