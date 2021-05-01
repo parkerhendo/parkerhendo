@@ -1,23 +1,26 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Header() {
   return (
     <div className='header'>
       <div className='header-wrapper wrapper'>
         <div className='title-group'>
-          <h1 className='tite title-lg'>Parker Henderson</h1>
+          <Link href='/'>
+            <h1 className='title title-lg'>Parker Henderson</h1>
+          </Link>
           <h2 className='subtitle title-sm'>Designer. Engineer. Tinkerer. Thinker.</h2>
         </div>
         <nav className='site-nav'>
-          <a href='#' className='body-lg link internal'>
-            Home
-          </a>
-          <a href='#' className='body-lg link internal'>
-            About
-          </a>
-          <a href='#' className='body-lg link internal'>
-            Work
-          </a>
+          <Link href='/'>
+            <a className='body-lg link'>Home</a>
+          </Link>
+          <Link href='/writing'>
+            <a className='body-lg link'>Writing</a>
+          </Link>
+          <Link href='/now'>
+            <a className='body-lg link'>Now</a>
+          </Link>
         </nav>
       </div>
     </div>
