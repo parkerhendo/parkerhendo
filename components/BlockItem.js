@@ -1,27 +1,45 @@
 import React from 'react';
+import Link from 'next/link';
 
 /**
  * Component Props
  *
  * @param   {string}  title        displays a string title
- * @param   {string}  duration     displays string of the duration at job
+ * @param   {string}  category     displays string of the duration at job
  * @param   {string}  description  a paragraph of work experience
  * @param   {string}  link         a link to work examples
  *
  * @return  {Component}            returns a react component
  */
-export default function BlockItem({ title, duration, description, link }) {
+export default function BlockItem({ title, category, description, href, link }) {
   return (
     <div className='work-item'>
       <div className='work-header'>
         <h4 className='title-md work-title'>{title}</h4>
-        <h5 className='title-sm work-date'>{duration}</h5>
+        <h5 className='title-sm work-date'>{category}</h5>
       </div>
       <p className='body-lg paragraph'>{description}</p>
+      {href && (
+        <div className='work-item-footer'>
+          <a href={href} target='_blank' className='button work-button body-sm'>
+            View work
+          </a>
+        </div>
+      )}
       {link && (
-        <a href={link} className='button work-button body-sm'>
-          View work
-        </a>
+        <div className='work-item-footer'>
+          <Link href={link.href}>
+            <a className='button work-button body-sm'>{link.label}</a>
+          </Link>
+          <button
+            className='button ghost-button body-sm'
+            onClick={() => {
+              navigator.clipboard.writeText(`${window.location.href}${link.href}`);
+            }}
+          >
+            Share Link
+          </button>
+        </div>
       )}
     </div>
   );
