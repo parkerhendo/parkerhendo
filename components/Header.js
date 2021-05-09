@@ -15,9 +15,16 @@ export default function Header() {
           <Link href='/'>
             <a className='body-lg link'>Home</a>
           </Link>
-          <Link href='/writing'>
+          {/* <Link href='/writing'>
             <a className='body-lg link'>Writing</a>
-          </Link>
+          </Link> */}
+          <a
+            href='https://www.goodreads.com/user/show/55640023-parker-henderson'
+            target='_blank'
+            className='body-lg link'
+          >
+            Reading List
+          </a>
           <Link href='/now'>
             <a className='body-lg link'>Now</a>
           </Link>
