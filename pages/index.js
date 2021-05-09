@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
 
       <Layout>
-        <Block title='About me'>
+        <Block title='👋 Welcome'>
           <p className='body-lg paragraph'>
             Hi, I'm Parker, a coffee enthusiast, product designer,{' '}
             <a href='https://github.com/parkerhendo' target='_blank' className='link inline highlight'>
