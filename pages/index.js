@@ -17,9 +17,9 @@ export default function Home() {
       <Layout>
         <Block title='About me'>
           <p className='body-lg paragraph'>
-            Hi, I'm Parker, I'm a coffee-obsessed product designer,{' '}
+            Hi, I'm Parker, a coffee enthusiast, product designer,{' '}
             <a href='https://github.com/parkerhendo' target='_blank' className='link inline highlight'>
-              tinkerer
+              programmer
             </a>
             ,{' '}
             <a
@@ -33,15 +33,12 @@ export default function Home() {
             <a href='https://twitter.com/parkerhendo' target='_blank' className='link inline highlight'>
               tweeter
             </a>
-            . I'm currently building design systems and{' '}
+            . I'm currently building recruiting software and design systems at{' '}
             <a href='https://jumpstart.me' className='link inline highlight' target='_blank'>
-              recruiting software at Jumpstart.
+              Jumpstart
             </a>
-          </p>
-          <p className='body-lg paragraph'>
-            In the past, I worked at Red Bull and a few startups, most of which you've probably never heard
-            about. I spend my free time thinking and reading about product & design strategy, tinkering with
-            software, and learning new things.
+            . Previously, I worked at Red Bull and some startups, most of which you've probably never heard
+            about.
           </p>
         </Block>
 
@@ -52,19 +49,19 @@ export default function Home() {
                 <BlockItem
                   title={'Systems design'}
                   description={
-                    'Everything we build is a system itself or embedded in a larger one. The ability to understand how all the pieces fit together is critical when designing.'
+                    "Everything we build is a system itself or embedded in a larger one. The ability to understand how all the pieces fit together is critical when designing."
                   }
                 />
                 <BlockItem
                   title={'Interaction & visual design'}
                   description={
-                    'From prototyping new interactions to designing into type and color systems. I like to think about the details so others can think about the big picture.'
+                    "From prototyping new interactions to designing into type and color systems, I enjoy diving into the details to create novel and expressive interfaces."
                   }
                 />
                 <BlockItem
                   title={'Software engineering'}
                   description={
-                    'I believe code is a powerful design tool and use my experience as a designer and engineer to establish systems, tools and processes across our teams.'
+                    "I believe code is a powerful design tool and use my experience as a designer and engineer to establish systems, tools, and processes across our teams."
                   }
                 />
               </Block>
@@ -74,19 +71,19 @@ export default function Home() {
                 <BlockItem
                   title={'Inclusive and diverse teams'}
                   description={
-                    'When we intentionally seek diversity in our teams and ensure everyone has a voice in the decisions effecting our work, we produce better results.'
+                    'When we intentionally seek diversity in our teams and ensure everyone has a voice in the decisions affecting our work, we produce better results.'
                   }
                 />
                 <BlockItem
                   title={'Accessibility'}
                   description={
-                    'As designers, we\'re responsible for creating products and experiences that are accessible for to everyone, not just the set of "ideal" personas we create.'
+                    'As designers, we\'re responsible for creating products and experiences accessible to everyone, not just a customer persona or the majority.'
                   }
                 />
                 <BlockItem
                   title={'Growth'}
                   description={
-                    'Championing the growth of those around you to learn new things from both success and failure levels up both teams and individuals.'
+                    'I believe in building a culture that concentrates on championing the growth of individuals and teams to learn new things and grow from both success and failure.'
                   }
                 />
               </Block>
@@ -98,7 +95,7 @@ export default function Home() {
             title={'Jumpstart'}
             category={'2020 - Current'}
             description={
-              'Jumpstart is a shared talent marketplace that uses diversity data to help recruiters make more informed hiring decisions and give candidates equal opportunity to jobs within their preferred industry. I focus on integrations for our recruiter product and our design system.'
+              'Jumpstart is a shared talent marketplace that uses diversity data to help recruiters make more informed hiring decisions and give candidates equal employment opportunities within their preferred industry. I focus on integrations for our recruiter product and our design system.'
             }
             href='https://jumpstart.me'
           />
@@ -107,7 +104,7 @@ export default function Home() {
             title={'Red Bull Media House'}
             category={'2019 - 2020'}
             description={
-              'Red Bull TV brings an inside look into the World of Red Bull straight to your living room and mobile device. Working on a team of three product designers, I currently lead design efforts on Red Bull’s mobile and immersive products across iOS, Android, Oculus, and more.'
+              'Red Bull TV brings an inside look into the World of Red Bull straight to your living room and mobile device. Working on a team of three product designers, I previously lead design efforts on Red Bull’s mobile and immersive products across iOS, Android, Oculus, and more.'
             }
             href='https://redbull.com/tv'
           />
@@ -116,7 +113,7 @@ export default function Home() {
             title={'Talk to You Live'}
             category={'2018 - 2019'}
             description={
-              'TTYL is a voice-first communication app that looked to bring spontaneous and lightweight conversations to your life through technology. I lead design and product through our first public launch.'
+              'TTYL is a voice-first communication app that looked to bring spontaneous and lightweight conversations to your life through technology. I lead design and product through the public launch of our first product.'
             }
             href='https://ttyl.social'
           />
@@ -125,7 +122,7 @@ export default function Home() {
             title={'Various places'}
             category={'2016 - 2019'}
             description={
-              'While finishing school, I spent a few years working with various early stage companies like ZebraIQ and PlayVS in a variety of design and engineering roles.'
+              'While finishing school, I spent a few years working with various early-stage companies like ZebraIQ and PlayVS across different design and engineering-focused roles.'
             }
           />
         </Block>
