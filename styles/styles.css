@@ -338,6 +338,43 @@ button {
   margin-bottom: var(--spacing-base);
 }
 
+.command-palette-container {
+  margin-top: 30vh;
+  background: white;
+  box-shadow: 0 20px 50px 0 rgba(0,0,0,0.3);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.command-palette-container input {
+  padding: 14px;
+  width: 360px;
+  font-size: var(--body-lg-size);
+  font-weight: var(--body-lg-weight);
+  outline: none;
+  background: rgba(var(--gray), 0.08);
+  border-radius: 4px;
+  margin-bottom: var(--spacing-base);
+}
+
+.command-palette-container input:focus {
+  border: 2px solid var(--blue);
+}
+
+.command-palette-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.command-palette-option {
+  width: 100%;
+  padding: 12px 16px;
+  text-align: left;
+}
+
 /* MARK: - Mobile styles */
 @media screen and (max-width: 768px) {
   .header-wrapper {

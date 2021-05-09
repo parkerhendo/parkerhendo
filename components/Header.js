@@ -68,7 +68,7 @@ export default function Header() {
               display: 'flex',
               flexDirection: 'row',
               justifyContent: 'center',
-              alignItems: 'center',
+              alignItems: 'flex-start',
               backgroundColor: 'rgba(0,0,0,0.3',
             }}
           >

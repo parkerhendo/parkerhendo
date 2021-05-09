@@ -26,6 +26,7 @@ export default function Writing({ posts }) {
     </div>
   );
 }
+
 export async function getStaticProps({ params }) {
   const posts = getAllPosts(['title', 'slug', 'author', 'excerpt']);
 
