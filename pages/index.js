@@ -29,7 +29,7 @@ export default function Home() {
             <a href='https://twitter.com/parkerhendo' target='_blank' className='link inline highlight'>
               tweeter
             </a>
-            . I'm currently building recruiting software and design systems at{' '}
+            . I'm currently designing recruiting software and building design systems at{' '}
             <a href='https://jumpstart.me' className='link inline highlight' target='_blank'>
               Jumpstart
             </a>
