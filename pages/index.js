@@ -88,12 +88,12 @@ export default function Home() {
         </div>
         <Block title='Work experience'>
           <BlockItem
-            title={'Jumpstart'}
+            title={'Canvas'}
             category={'2020 - Current'}
             description={
-              'Jumpstart is a shared talent marketplace that uses diversity data to help recruiters make more informed hiring decisions and give candidates equal employment opportunities within their preferred industry. I focus on integrations for our recruiter product and our design system.'
+              'Canvas (f.k.a Jumpstart) is a shared talent marketplace that uses diversity data to help recruiters make more informed hiring decisions and give candidates equal employment opportunities within their preferred industry. I focus on integrations for our recruiter product and our design system.'
             }
-            href='https://jumpstart.me'
+            href='https://canvas.com'
           />
 
           <BlockItem
