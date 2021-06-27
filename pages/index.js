@@ -30,8 +30,8 @@ export default function Home() {
               tweeter
             </a>
             . I'm currently designing recruiting software and building design systems at{' '}
-            <a href='https://jumpstart.me' className='link inline highlight' target='_blank'>
-              Jumpstart
+            <a href='https://canvas.com' className='link inline highlight' target='_blank'>
+              Canvas
             </a>
             . Previously, I worked at Red Bull and some startups, most of which you've probably never heard
             about.
